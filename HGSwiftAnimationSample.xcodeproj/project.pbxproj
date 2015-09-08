@@ -13,6 +13,11 @@
 		38E1D4641B9D8534006726B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E1D4631B9D8534006726B1 /* Images.xcassets */; };
 		38E1D4671B9D8534006726B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E1D4651B9D8534006726B1 /* LaunchScreen.xib */; };
 		38E1D4731B9D8534006726B1 /* HGSwiftAnimationSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1D4721B9D8534006726B1 /* HGSwiftAnimationSampleTests.swift */; };
+		38E1D4801B9D86DE006726B1 /* HGHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1D47F1B9D86DE006726B1 /* HGHolderView.swift */; };
+		38E1D4821B9D86F8006726B1 /* HGOvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1D4811B9D86F8006726B1 /* HGOvalLayer.swift */; };
+		38E1D4871B9E8F7C006726B1 /* HGTriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1D4861B9E8F7C006726B1 /* HGTriangleLayer.swift */; };
+		38E1D4891B9E949B006726B1 /* HGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1D4881B9E949B006726B1 /* HGColors.swift */; };
+		38E1D48C1B9EBB1A006726B1 /* HGRectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1D48B1B9EBB1A006726B1 /* HGRectangleLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		38E1D46C1B9D8534006726B1 /* HGSwiftAnimationSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGSwiftAnimationSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E1D4711B9D8534006726B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38E1D4721B9D8534006726B1 /* HGSwiftAnimationSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGSwiftAnimationSampleTests.swift; sourceTree = "<group>"; };
+		38E1D47F1B9D86DE006726B1 /* HGHolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGHolderView.swift; sourceTree = "<group>"; };
+		38E1D4811B9D86F8006726B1 /* HGOvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGOvalLayer.swift; sourceTree = "<group>"; };
+		38E1D4861B9E8F7C006726B1 /* HGTriangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGTriangleLayer.swift; sourceTree = "<group>"; };
+		38E1D4881B9E949B006726B1 /* HGColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGColors.swift; sourceTree = "<group>"; };
+		38E1D48B1B9EBB1A006726B1 /* HGRectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HGRectangleLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 			children = (
 				38E1D45C1B9D8534006726B1 /* AppDelegate.swift */,
 				38E1D45E1B9D8534006726B1 /* ViewController.swift */,
+				38E1D47E1B9D86DE006726B1 /* HGHolderView */,
 				38E1D4601B9D8534006726B1 /* Main.storyboard */,
 				38E1D4631B9D8534006726B1 /* Images.xcassets */,
 				38E1D4651B9D8534006726B1 /* LaunchScreen.xib */,
@@ -110,6 +121,34 @@
 				38E1D4711B9D8534006726B1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38E1D47E1B9D86DE006726B1 /* HGHolderView */ = {
+			isa = PBXGroup;
+			children = (
+				38E1D47F1B9D86DE006726B1 /* HGHolderView.swift */,
+				38E1D48A1B9E950F006726B1 /* Utilities */,
+				38E1D4851B9D9813006726B1 /* Layers */,
+			);
+			path = HGHolderView;
+			sourceTree = "<group>";
+		};
+		38E1D4851B9D9813006726B1 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				38E1D4811B9D86F8006726B1 /* HGOvalLayer.swift */,
+				38E1D4861B9E8F7C006726B1 /* HGTriangleLayer.swift */,
+				38E1D48B1B9EBB1A006726B1 /* HGRectangleLayer.swift */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		38E1D48A1B9E950F006726B1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				38E1D4881B9E949B006726B1 /* HGColors.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E1D4871B9E8F7C006726B1 /* HGTriangleLayer.swift in Sources */,
 				38E1D45F1B9D8534006726B1 /* ViewController.swift in Sources */,
+				38E1D4801B9D86DE006726B1 /* HGHolderView.swift in Sources */,
+				38E1D48C1B9EBB1A006726B1 /* HGRectangleLayer.swift in Sources */,
+				38E1D4821B9D86F8006726B1 /* HGOvalLayer.swift in Sources */,
+				38E1D4891B9E949B006726B1 /* HGColors.swift in Sources */,
 				38E1D45D1B9D8534006726B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +453,7 @@
 				38E1D4781B9D8534006726B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38E1D4791B9D8534006726B1 /* Build configuration list for PBXNativeTarget "HGSwiftAnimationSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +462,7 @@
 				38E1D47B1B9D8534006726B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
